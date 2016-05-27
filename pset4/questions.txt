@@ -1,0 +1,29 @@
+0.  BMP: 32 bit color, or over 4 billion
+PNG: 24 bit, 16 million
+JPEG: 24 bit, 16 million
+GIF: 8 bits, 256 colors
+1.  GIF
+2.  Lossless - all original data can be recovered when the file is uncompressed. 
+Lossy eliminating certain information, especially redundant information.
+3.  JPEG 
+4.  When the operating system erases a FAT file, two
+things occur. First, the system modifies the filename’s first
+character in the file’s directory entry to signal that the file
+has been deleted and that the directory entry can be recycled.
+Second, the system moves all of the file’s FAT clusters
+to the hard drive’s list of free clusters. The actual file
+data is never touched
+5.  Delete files using a software, that replaces the section on disc with all zeroes or some other pattern.
+6.  stdint.h is a header file that includes definitions of several new integer types to enhance the portability of programs
+7.  Integer type with a width of exactly 8, 16, or 32 bits. Use when you exactly sure about length of integers in your programm and want to keep as memory as you need
+8.  BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes
+9.  Bitmap file header. The header field used to identify the BMP and DIB file is 0x42 0x4D in hexadecimal, same as BM in ASCII.
+10. bfSize is the size, in bytes, of the bitmap file. biSize is the number of bytes required by the structure.
+11. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+12. biBitCount. The number of bits-per-pixel. The biBitCount member of the BITMAPINFOHEADER structure determines the number of bits that define each pixel and the maximum number of colors in the bitmap. 
+13. fopen will return NULL if it can not create the outfile to write to. may be it is a permission problem
+14. this is a parametr 'nmemb' of fread function. This is the number of elements, each one with a sizeof(BITMAPFILEHEADER).
+15. if bi.biWidth = 3, then (4 - (3px * 3byte) % 4) % 4, 3%4. The answer is 3.
+16. skip over padding, if any
+17. SEEK_CUR Current position of the file pointer. This is the position from where offset is added.
+18. it is a man on the picture. he looks like John Kennedy, but I am not sure 
