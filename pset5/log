@@ -1,0 +1,61 @@
+==113406== Memcheck, a memory error detector
+==113406== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==113406== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==113406== Command: ./speller texts/austinpowers.txt
+==113406== Parent PID: 57308
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x40129E: load (dictionary.c:95)
+==113406==    by 0x40090D: main (speller.c:45)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x401222: load (dictionary.c:82)
+==113406==    by 0x40090D: main (speller.c:45)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x40110D: check (dictionary.c:48)
+==113406==    by 0x400C97: main (speller.c:117)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x400CE0: main (speller.c:124)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x4010C4: check (dictionary.c:38)
+==113406==    by 0x400C97: main (speller.c:117)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x4013C1: unloadNode (dictionary.c:136)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x401410: unload (dictionary.c:152)
+==113406==    by 0x400E1C: main (speller.c:157)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x4013C1: unloadNode (dictionary.c:136)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x401410: unload (dictionary.c:152)
+==113406==    by 0x400E1C: main (speller.c:157)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x4013C1: unloadNode (dictionary.c:136)
+==113406==    by 0x4013D8: unloadNode (dictionary.c:138)
+==113406==    by 0x401410: unload (dictionary.c:152)
+==113406==    by 0x400E1C: main (speller.c:157)
+==113406== 
+==113406== Conditional jump or move depends on uninitialised value(s)
+==113406==    at 0x4013C1: unloadNode (dictionary.c:136)
+==113406==    by 0x401410: unload (dictionary.c:152)
+==113406==    by 0x400E1C: main (speller.c:157)
+==113406== 
+==113406== 
+==113406== HEAP SUMMARY:
+==113406==     in use at exit: 0 bytes in 0 blocks
+==113406==   total heap usage: 367,084 allocs, 367,084 frees, 82,227,504 bytes allocated
+==113406== 
+==113406== All heap blocks were freed -- no leaks are possible
+==113406== 
+==113406== For counts of detected and suppressed errors, rerun with: -v
+==113406== Use --track-origins=yes to see where uninitialised values come from
+==113406== ERROR SUMMARY: 9911858 errors from 9 contexts (suppressed: 0 from 0)

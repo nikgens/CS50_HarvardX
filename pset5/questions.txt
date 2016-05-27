@@ -1,0 +1,17 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis - is an English word that refers to a lung disease that is otherwise known as silicosis. 
+It is the longest word in the English language published in a dictionary, the Oxford English Dictionary.
+1.  getrusage - function that gets resource usage.
+2.  16
+3.  because it is a struct and there not one value, it's a scope of diferent values.
+4.  in the 'for' loop function fgetc() reads the file text character by character to the end of file, write them into array of size 45+1 and check for some statements. 
+and this goes for every word in the text file.
+If the size of word exceeds the maximum permitted size of a word, as defined by LENGTH, the program will cycle to the end of the word and start looking for the next word.
+
+5.  fgetc help check that we use words only with letters
+6.  These pointers cannot change the values that they are pointing to.
+7.  I used trie in this competition. It seems clearly for me then hashtables.
+I used datatype struct with two variables: boolean for mark comlete words, and pointer for struct to make linked list.
+I had one global variable root, that could be taken from anywere. root pointer keep the begining of trie.
+8.  The unload function is still slow, and I dont no right now how to make it faster. But I will be back for this pset to make it better.
+9.  nothing. It's take me a week to understand th idea of linked list and implement it as now )) I need to learn deeper the recursion to faster my unload function, but for now it's done
+10. yes. upload function.
